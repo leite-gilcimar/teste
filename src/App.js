@@ -5,6 +5,7 @@ require("dotenv").config();
 //dotenv.settings();
 // Apenas um comentário adicional
 console.log(process.env.USERDB);
+console.log(process.env.PASSDB);
 
 export default class App extends Component {
   render() {
@@ -16,7 +17,9 @@ export default class App extends Component {
           <input type="text"></input>
           <span>Senha</span>
           <input type="password"></input>
-          <span>Dot: {process.env.USERDB}</span>
+          <span>DotUser: {process.env.USERDB} </span>
+          <br />
+          <span>DotPass: {process.env.PASSDB}</span>
         </div>
       </div>
     );
